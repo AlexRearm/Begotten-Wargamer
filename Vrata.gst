@@ -42,13 +42,15 @@
   </costTypes>
   <categoryEntries>
     <categoryEntry id="325c828d-3c27-4d18-8da3-794b655dc832" name="Орден Привратников" hidden="false"/>
+    <categoryEntry id="3f2cd7f7-61b6-40d9-8631-0767a2945ad1" name="Человек" hidden="false"/>
+    <categoryEntry id="1a9903b3-87e5-4e1a-87db-3e5c18951e9c" name="Привратник" hidden="false"/>
+    <categoryEntry id="29226b64-9fe3-4278-8a3e-53daacd88d03" name="Стойкое Сияние" hidden="false"/>
     <categoryEntry id="37c4e4d8-eb1b-4523-85d2-35db13b06bc0" name="Пехота" hidden="false"/>
-    <categoryEntry id="ceca7fb2-b4e7-430d-896e-25bf8a6e01fe" name="Стрелки" hidden="false"/>
-    <categoryEntry id="61cbe4ac-c7af-4ae3-83c1-2450bfb0fadc" name="Привратники" hidden="false"/>
-    <categoryEntry id="be3d80d2-cda5-45fd-8da0-7f735c9b3259" name="Основа" hidden="false"/>
     <categoryEntry id="12f3421e-3301-42d9-89fb-36cea1dd5d5c" name="Тяжёлая" hidden="false"/>
+    <categoryEntry id="61cbe4ac-c7af-4ae3-83c1-2450bfb0fadc" name="Привратники" hidden="false"/>
     <categoryEntry id="ccf27112-0d2b-4db6-86e4-e9a7074a2209" name="Рыцари" hidden="false"/>
     <categoryEntry id="64c46708-c7d1-4579-8a3c-b9fedc7140ec" name="Дети Сатаны" hidden="false"/>
+    <categoryEntry id="ceca7fb2-b4e7-430d-896e-25bf8a6e01fe" name="Стрелки" hidden="false"/>
     <categoryEntry id="93d678a6-05dd-4a22-8734-624e0899a28c" name="Дом Вараздат" hidden="false"/>
     <categoryEntry id="c55a3372-5c10-49da-8699-79794893a990" name="Дом Филимаксио" hidden="false"/>
     <categoryEntry id="3c6a15e6-0ed3-4293-8778-6ebbb6a4fe9b" name="Юстициары" hidden="false"/>
@@ -68,6 +70,42 @@
                         id="96a1ffcd-60e3-450b-84a0-34970b99d569" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="03c1dfe2-172a-4c55-8f0a-1415c94b0689" targetId="3f2cd7f7-61b6-40d9-8631-0767a2945ad1" hidden="false" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0"
+                        percentValue="false" shared="true"
+                        includeChildSelections="false" includeChildForces="false"
+                        id="e5beae54-34ab-4ed5-85eb-61c91eff2dc8" type="min"/>
+            <constraint field="selections" scope="force" value="-1"
+                        percentValue="false" shared="true"
+                        includeChildSelections="false" includeChildForces="false"
+                        id="a3c29574-ef07-4a51-82a6-92c426614d72" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d028f49c-5b2c-4b01-8462-d1bedc3de538" targetId="1a9903b3-87e5-4e1a-87db-3e5c18951e9c" hidden="false" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0"
+                        percentValue="false" shared="true"
+                        includeChildSelections="false" includeChildForces="false"
+                        id="b325d6b4-1a73-4963-8988-fe7ec3d99b96" type="min"/>
+            <constraint field="selections" scope="force" value="-1"
+                        percentValue="false" shared="true"
+                        includeChildSelections="false" includeChildForces="false"
+                        id="14e082bf-02fe-46aa-8dff-efe96e595b10" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7a289002-9c54-45c4-8b47-00499e012448" targetId="29226b64-9fe3-4278-8a3e-53daacd88d03" hidden="false" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0"
+                        percentValue="false" shared="true"
+                        includeChildSelections="false" includeChildForces="false"
+                        id="c4a84093-57db-4f48-8ef7-a9e384304af7" type="min"/>
+            <constraint field="selections" scope="force" value="-1"
+                        percentValue="false" shared="true"
+                        includeChildSelections="false" includeChildForces="false"
+                        id="18b17175-d52f-4c72-8852-a5f62a054a1c" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="e7aaead8-6e6d-46d2-89e3-2b0d59c8aee5" targetId="37c4e4d8-eb1b-4523-85d2-35db13b06bc0" hidden="false" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="0"
@@ -80,16 +118,16 @@
                         id="7fe3c3a2-a1d0-49dd-8cae-3a0b30c85a2c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="ca92a11c-be34-4428-8841-1daa3db10410" targetId="ceca7fb2-b4e7-430d-896e-25bf8a6e01fe" hidden="false" primary="false">
+        <categoryLink id="3fd4d480-a39d-4aa5-8670-b9788a1d4645" targetId="12f3421e-3301-42d9-89fb-36cea1dd5d5c" hidden="false" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="0"
                         percentValue="false" shared="true"
                         includeChildSelections="false" includeChildForces="false"
-                        id="70f44d27-2e76-4f2c-828d-60b5dbfebd54" type="min"/>
+                        id="6ba47483-c2a4-4d3a-803a-483c30e8fca4" type="min"/>
             <constraint field="selections" scope="force" value="-1"
                         percentValue="false" shared="true"
                         includeChildSelections="false" includeChildForces="false"
-                        id="4c49a468-f940-4fca-8c4d-ea4336efc716" type="max"/>
+                        id="56b9523f-344f-444e-8d62-79ef456b93d4" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="545b2db1-ae16-4c82-861d-503ecc33eebd" targetId="61cbe4ac-c7af-4ae3-83c1-2450bfb0fadc" hidden="false" primary="false">
@@ -102,30 +140,6 @@
                         percentValue="false" shared="true"
                         includeChildSelections="false" includeChildForces="false"
                         id="8c7f2316-10b5-4c6a-8ee8-c0845d021035" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="5d632b6f-2490-40b3-80e4-e6cfe48536a8" targetId="be3d80d2-cda5-45fd-8da0-7f735c9b3259" hidden="false" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="0"
-                        percentValue="false" shared="true"
-                        includeChildSelections="false" includeChildForces="false"
-                        id="9ab64f58-250d-4a91-868a-60a97401c6eb" type="min"/>
-            <constraint field="selections" scope="force" value="-1"
-                        percentValue="false" shared="true"
-                        includeChildSelections="false" includeChildForces="false"
-                        id="55a805b2-7255-478d-8028-377b6e13bfff" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="3fd4d480-a39d-4aa5-8670-b9788a1d4645" targetId="12f3421e-3301-42d9-89fb-36cea1dd5d5c" hidden="false" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="0"
-                        percentValue="false" shared="true"
-                        includeChildSelections="false" includeChildForces="false"
-                        id="6ba47483-c2a4-4d3a-803a-483c30e8fca4" type="min"/>
-            <constraint field="selections" scope="force" value="-1"
-                        percentValue="false" shared="true"
-                        includeChildSelections="false" includeChildForces="false"
-                        id="56b9523f-344f-444e-8d62-79ef456b93d4" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="6f7d3c20-7aa8-45f4-8b3e-26bcf9fb313a" targetId="ccf27112-0d2b-4db6-86e4-e9a7074a2209" hidden="false" primary="false">
@@ -150,6 +164,18 @@
                         percentValue="false" shared="true"
                         includeChildSelections="false" includeChildForces="false"
                         id="73fd34e9-a52d-45ae-8832-55848f27e746" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ca92a11c-be34-4428-8841-1daa3db10410" targetId="ceca7fb2-b4e7-430d-896e-25bf8a6e01fe" hidden="false" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0"
+                        percentValue="false" shared="true"
+                        includeChildSelections="false" includeChildForces="false"
+                        id="70f44d27-2e76-4f2c-828d-60b5dbfebd54" type="min"/>
+            <constraint field="selections" scope="force" value="-1"
+                        percentValue="false" shared="true"
+                        includeChildSelections="false" includeChildForces="false"
+                        id="4c49a468-f940-4fca-8c4d-ea4336efc716" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="6cb3989d-7192-4020-87cc-31e3793fca3e" targetId="93d678a6-05dd-4a22-8734-624e0899a28c" hidden="false" primary="false">
