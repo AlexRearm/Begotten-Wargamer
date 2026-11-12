@@ -3,17 +3,26 @@
            id="997af124-8a57-4159-84af-a36ea44f9b2b" name="Дети Сатаны" revision="1" battleScribeVersion="2.03"
            gameSystemId="a1b2c3d4-0000-4000-8000-000000000001" hidden="false" library="false">
   <rules>
+    <rule id="a78f3653-d233-4439-853f-9dc42f3da7d6" name="Описание" hidden="false">
+      <description>Наёмные стрелки дома Вараздат. Их болты моют не водой.</description>
+    </rule>
     <rule id="da7a3413-ef95-4fd4-8dab-9a842b0ab835" name="Освящённые кровью болты" hidden="false">
       <description>Один раз за игру стрельба отряда наносит смертельные раны вместо обычных.</description>
     </rule>
     <rule id="1a25d93c-fcc0-486d-86d6-3033f547db63" name="Стая" hidden="false">
       <description>Отряд может стрелять после отступления.</description>
     </rule>
+    <rule id="bebd572b-f1ab-4acc-8775-d50286d5e9b4" name="Описание" hidden="false">
+      <description>Молодые клинки Филимаксио, жаждущие первой крови и первых титулов.</description>
+    </rule>
     <rule id="fc9400a2-a218-45b9-82c4-b7369ec0f647" name="Жатва" hidden="false">
       <description>За каждую уничтоженную этим отрядом вражескую модель отряд восстанавливает 1 рану.</description>
     </rule>
     <rule id="87748ea8-66c0-4d3e-8b36-537fc37f0419" name="Ритуальный азарт" hidden="false">
       <description>После уничтожения вражеского отряда этот отряд может сразу совершить ещё одно движение.</description>
+    </rule>
+    <rule id="23df2ce9-83dd-4a41-804a-c08250177606" name="Описание" hidden="false">
+      <description>Суд и плаха дома Филимаксио в одних доспехах. Приговор обжалованию не подлежит.</description>
     </rule>
     <rule id="fcd40681-19cb-4984-8069-b9f2aa9aa1d4" name="Приговор" hidden="false">
       <description>В начале боя выберите вражеский отряд: юстициары наносят ему +1 к урону всю игру.</description>
@@ -233,6 +242,7 @@
       <categoryLink id="c3afe60f-f912-45ad-840e-fd0e4707dab6" targetId="93d678a6-05dd-4a22-8734-624e0899a28c" hidden="false" primary="false"/>
       </categoryLinks>
       <infoLinks>
+      <infoLink id="20a7d58b-0ccd-4008-8f5d-8f8fec4ea57f" targetId="a78f3653-d233-4439-853f-9dc42f3da7d6" type="rule" hidden="false"/>
       <infoLink id="b149ec7e-a1a8-4eea-87bd-50deb973d67c" targetId="da7a3413-ef95-4fd4-8dab-9a842b0ab835" type="rule" hidden="false"/>
       <infoLink id="7cff2735-74cc-439c-816c-05b623860a1d" targetId="1a25d93c-fcc0-486d-86d6-3033f547db63" type="rule" hidden="false"/>
       </infoLinks>
@@ -277,6 +287,7 @@
       <categoryLink id="95f1cc6e-9ce6-4168-807a-4c7c2960bdb6" targetId="c55a3372-5c10-49da-8699-79794893a990" hidden="false" primary="false"/>
       </categoryLinks>
       <infoLinks>
+      <infoLink id="2d63c842-f656-408a-8e99-6c444876c738" targetId="bebd572b-f1ab-4acc-8775-d50286d5e9b4" type="rule" hidden="false"/>
       <infoLink id="24f0ced2-1786-4887-89b5-b21e6361a0e6" targetId="fc9400a2-a218-45b9-82c4-b7369ec0f647" type="rule" hidden="false"/>
       <infoLink id="2b07acc3-6ac2-4314-802c-acb3d16d0f0a" targetId="87748ea8-66c0-4d3e-8b36-537fc37f0419" type="rule" hidden="false"/>
       </infoLinks>
@@ -322,6 +333,7 @@
       <categoryLink id="abb568f3-b063-40a9-834c-b3ce19164f53" targetId="3c6a15e6-0ed3-4293-8778-6ebbb6a4fe9b" hidden="false" primary="false"/>
       </categoryLinks>
       <infoLinks>
+      <infoLink id="f71f32af-a223-4e5d-8be1-dc802cfc09f1" targetId="23df2ce9-83dd-4a41-804a-c08250177606" type="rule" hidden="false"/>
       <infoLink id="257a7e10-bff0-41c5-89b1-b822f88a2909" targetId="fcd40681-19cb-4984-8069-b9f2aa9aa1d4" type="rule" hidden="false"/>
       <infoLink id="84f8ca54-dd18-4175-8c0c-24b138bdbcfe" targetId="4b6fd660-ac60-484f-8883-c083b016d9a7" type="rule" hidden="false"/>
       </infoLinks>

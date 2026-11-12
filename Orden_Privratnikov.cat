@@ -3,23 +3,35 @@
            id="022fc852-68dc-46bb-8f09-433f2500b2a6" name="Орден Привратников" revision="1" battleScribeVersion="2.03"
            gameSystemId="a1b2c3d4-0000-4000-8000-000000000001" hidden="false" library="false">
   <rules>
+    <rule id="b62b8aca-2b35-473b-8dc3-edcd241e30ca" name="Описание" hidden="false">
+      <description>Послушники ордена Привратников - наспех снаряжённые, с лёгкими арбалетами в руках. Поодиночке они никчемны, в ближнем бою беспомощны, и угрозу представляют лишь поливая врагов Сияния дождем из болтов.</description>
+    </rule>
     <rule id="680655a6-dc3e-43da-803c-a0c9698dc998" name="Выстрел в упор" hidden="false">
       <description>Стреляя по врагу на расстоянии 10&quot; и меньше, получают бонус +1 на попадание и +2 к силе оружия.</description>
     </rule>
     <rule id="215b7aa1-43e5-4d86-8fb0-127395c8de7e" name="Легион Сияния" hidden="false">
       <description>Может пополнять или увеличивать свое количество вне лимита за счет странников той же веры (Сияние).</description>
     </rule>
-    <rule id="215b7aa1-43e5-4d86-8fb0-127395c8de7e" name="Легион Сияния" hidden="false">
-      <description>Может пополнять или увеличивать свое количество вне лимита за счет странников той же веры (Сияние).</description>
-    </rule>
-    <rule id="7c7f07c5-7506-488c-8689-047e9fa3efd1" name="Сомкнутый строй" hidden="false">
-      <description>Пока в отряде не меньше половины людей, его спасбросок улучшается до 4+.</description>
+    <rule id="5bf9476d-f0be-4ada-878a-a9aae9a0b534" name="Описание" hidden="false">
+      <description>Послушники-новобранцы, едва прошедшие начальный курс метания пилумов и ударов копьем. Их снаряжение - ветхие щиты, жалкое подобие копий и легкая броня. Всего этого хватает ровно на то, чтобы умереть, сдерживая натиск врага чуть дольше двух минут.</description>
     </rule>
     <rule id="215b7aa1-43e5-4d86-8fb0-127395c8de7e" name="Легион Сияния" hidden="false">
       <description>Может пополнять или увеличивать свое количество вне лимита за счет странников той же веры (Сияние).</description>
     </rule>
     <rule id="7c7f07c5-7506-488c-8689-047e9fa3efd1" name="Сомкнутый строй" hidden="false">
       <description>Пока в отряде не меньше половины людей, его спасбросок улучшается до 4+.</description>
+    </rule>
+    <rule id="50db3aa7-b101-4836-8387-f09d0a9e3e28" name="Описание" hidden="false">
+      <description>Послушники, пережившие пару боёв и заслужившие звание легионера, грубый панцирь и рваную кольчугу. Большим отрядом они способны удерживать позиции или наступать на врага, прикрываясь щитами; но в малом количестве их всё же перережут, словно поросят.</description>
+    </rule>
+    <rule id="215b7aa1-43e5-4d86-8fb0-127395c8de7e" name="Легион Сияния" hidden="false">
+      <description>Может пополнять или увеличивать свое количество вне лимита за счет странников той же веры (Сияние).</description>
+    </rule>
+    <rule id="7c7f07c5-7506-488c-8689-047e9fa3efd1" name="Сомкнутый строй" hidden="false">
+      <description>Пока в отряде не меньше половины людей, его спасбросок улучшается до 4+.</description>
+    </rule>
+    <rule id="a91e1bb4-dd12-465f-8426-fef6b8f22fd0" name="Описание" hidden="false">
+      <description>Бывшие разведчики, прославившиеся меткостью стрельбы из огнестрельного оружия. Громкие залпы мушкетонов - пусть и не всегда настигая цель - разят врагов Сияния наповал.</description>
     </rule>
     <rule id="680655a6-dc3e-43da-803c-a0c9698dc998" name="Выстрел в упор" hidden="false">
       <description>Стреляя по врагу на расстоянии 10&quot; и меньше, получают бонус +1 на попадание и +2 к силе оружия.</description>
@@ -327,6 +339,7 @@
       <categoryLink id="47891081-4fb7-4295-8aa7-b6b564654c45" targetId="29226b64-9fe3-4278-8a3e-53daacd88d03" hidden="false" primary="false"/>
       </categoryLinks>
       <infoLinks>
+      <infoLink id="f7a341ff-13ea-4cc3-8ba9-9cb90645fa8b" targetId="b62b8aca-2b35-473b-8dc3-edcd241e30ca" type="rule" hidden="false"/>
       <infoLink id="3ecb0310-08d3-4cb9-85df-151bfb4e22e7" targetId="680655a6-dc3e-43da-803c-a0c9698dc998" type="rule" hidden="false"/>
       <infoLink id="7e0fd415-ee96-4614-898f-a8e7efdd1931" targetId="215b7aa1-43e5-4d86-8fb0-127395c8de7e" type="rule" hidden="false"/>
       </infoLinks>
@@ -370,6 +383,7 @@
       <categoryLink id="d817ead0-6efd-4e02-8584-b67aa33892b8" targetId="29226b64-9fe3-4278-8a3e-53daacd88d03" hidden="false" primary="false"/>
       </categoryLinks>
       <infoLinks>
+      <infoLink id="9a23b7ae-520b-465a-8c5e-ce1659d49826" targetId="5bf9476d-f0be-4ada-878a-a9aae9a0b534" type="rule" hidden="false"/>
       <infoLink id="617fb3c7-f2b7-4a0e-8e70-ba809b7d3549" targetId="215b7aa1-43e5-4d86-8fb0-127395c8de7e" type="rule" hidden="false"/>
       <infoLink id="ca0ecea1-e446-4c9d-8389-f08a0899b2a5" targetId="7c7f07c5-7506-488c-8689-047e9fa3efd1" type="rule" hidden="false"/>
       </infoLinks>
@@ -414,6 +428,7 @@
       <categoryLink id="89fd424e-59bd-4510-810d-49418dc86cc0" targetId="ccf27112-0d2b-4db6-86e4-e9a7074a2209" hidden="false" primary="false"/>
       </categoryLinks>
       <infoLinks>
+      <infoLink id="f70ce2ce-ef4e-4163-84b8-6b85a8d2dd03" targetId="50db3aa7-b101-4836-8387-f09d0a9e3e28" type="rule" hidden="false"/>
       <infoLink id="5b508c46-5ae7-47e9-8ca0-fa6714fcc802" targetId="215b7aa1-43e5-4d86-8fb0-127395c8de7e" type="rule" hidden="false"/>
       <infoLink id="f6587752-11f4-46fb-8208-6200beee2c3b" targetId="7c7f07c5-7506-488c-8689-047e9fa3efd1" type="rule" hidden="false"/>
       </infoLinks>
@@ -457,6 +472,7 @@
       <categoryLink id="49945f66-d0bb-43a1-8eaf-5c38a45db178" targetId="29226b64-9fe3-4278-8a3e-53daacd88d03" hidden="false" primary="false"/>
       </categoryLinks>
       <infoLinks>
+      <infoLink id="9cfb485c-6199-484a-85a0-dc9111246d0d" targetId="a91e1bb4-dd12-465f-8426-fef6b8f22fd0" type="rule" hidden="false"/>
       <infoLink id="a780817d-75ad-4ac8-838b-18298cec15d5" targetId="680655a6-dc3e-43da-803c-a0c9698dc998" type="rule" hidden="false"/>
       <infoLink id="ef22bb19-dab5-4b13-8d53-7e8a2be77ff4" targetId="215b7aa1-43e5-4d86-8fb0-127395c8de7e" type="rule" hidden="false"/>
       </infoLinks>
