@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema"
+           id="022fc852-68dc-46bb-8f09-433f2500b2a6" name="Орден Привратников" revision="1" battleScribeVersion="2.03"
+           gameSystemId="a1b2c3d4-0000-4000-8000-000000000001" hidden="false" library="false">
+  <rules>
+    <rule id="e3f1459d-2f31-4aa2-895f-3c37ce26bbdc" name="Залп с опорой" hidden="false">
+      <description>Если отряд не двигался в этом ходу, его стрельба наносит +1 к урону.</description>
+    </rule>
+    <rule id="7f8c33bd-b87f-46ee-8a6a-a0cd491c2dba" name="Дозорные Врат" hidden="false">
+      <description>Враг не получает бонусов укрытия против стрельбы этого отряда на дистанции до 12&quot;.</description>
+    </rule>
+    <rule id="973eb3ea-8bfc-4cf8-8bf0-178cef69f5a3" name="Стойкость клятвы" hidden="false">
+      <description>Отряд автоматически проходит проверки морали, стоя на цели.</description>
+    </rule>
+    <rule id="7c7f07c5-7506-488c-8689-047e9fa3efd1" name="Сомкнутый строй" hidden="false">
+      <description>Пока в отряде не меньше половины моделей, его спасбросок улучшается до 2+ против дальнего боя.</description>
+    </rule>
+    <rule id="71c2dd2d-5fd2-49e4-8c0b-dc28f0cfca6e" name="Ломовой удар" hidden="false">
+      <description>В ход чарджа этот отряд наносит удары первым.</description>
+    </rule>
+    <rule id="13eda901-380e-414c-8063-da1be7893c55" name="Непоколебимые" hidden="false">
+      <description>Отряд игнорирует первый проваленный спасбросок в каждой фазе.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="5965257f-8646-4d33-80da-3fa68bad4534" name="Послушник ордена с арбалетом" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="979d605f-3d89-4518-8e90-c94840c2ce80" name="Послушник ордена с арбалетом" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">6&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">3</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">4+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">1</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">7+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="d38ca7ab-b532-400f-829b-4847b754988c" name="Арбалет ордена" typeId="93726c05-ab82-4a52-8393-8c175e2bda48" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="484e1a4b-24ee-4c76-8031-36444380bc5c">24&quot;</characteristic>
+            <characteristic name="A" typeId="9d919dca-041d-4558-8999-2ec7a93a3051">1</characteristic>
+            <characteristic name="Skill" typeId="533fbbe5-c7a7-4fc0-87cb-dee784341215">4+</characteristic>
+            <characteristic name="S" typeId="b41a74d4-b711-4597-8321-b4598492122c">4</characteristic>
+            <characteristic name="AP" typeId="364c7262-ad89-4636-8fc6-6795931c1c85">0</characteristic>
+            <characteristic name="D" typeId="0a89b98c-f9db-4f13-84e8-1e718bde0391">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="b32d6150-563b-48d2-8a7d-34d98d0530d2" name="Кинжал послушника" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">1</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">4+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">3</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">0</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fceacfb8-53e5-478c-8ceb-a25e0426b729" name="Знаменосец ордена" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="9ff79bb5-2e1c-4066-8033-fe270ae5d5c0" name="Знаменосец ордена" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">6&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">3</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">4+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">2</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">8+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="c889b32e-fffd-4850-8ef7-69625c84aedc" name="Арбалет ордена" typeId="93726c05-ab82-4a52-8393-8c175e2bda48" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="484e1a4b-24ee-4c76-8031-36444380bc5c">24&quot;</characteristic>
+            <characteristic name="A" typeId="9d919dca-041d-4558-8999-2ec7a93a3051">1</characteristic>
+            <characteristic name="Skill" typeId="533fbbe5-c7a7-4fc0-87cb-dee784341215">4+</characteristic>
+            <characteristic name="S" typeId="b41a74d4-b711-4597-8321-b4598492122c">4</characteristic>
+            <characteristic name="AP" typeId="364c7262-ad89-4636-8fc6-6795931c1c85">0</characteristic>
+            <characteristic name="D" typeId="0a89b98c-f9db-4f13-84e8-1e718bde0391">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="24164f14-746a-493d-8631-62a823374958" name="Кинжал послушника" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">1</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">4+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">3</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">0</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a07066d-6a4d-45ea-841a-5cc8c9700b22" name="Послушник Ордена привратников" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="e18984bc-972e-4bf7-86ff-7e1d390bdf9b" name="Послушник Ордена привратников" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">6&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">4</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">3+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">2</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">8+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">2</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="e3472da6-5ff3-40e2-85c0-80ede0c01f1f" name="Метательный дротик" typeId="93726c05-ab82-4a52-8393-8c175e2bda48" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="484e1a4b-24ee-4c76-8031-36444380bc5c">12&quot;</characteristic>
+            <characteristic name="A" typeId="9d919dca-041d-4558-8999-2ec7a93a3051">1</characteristic>
+            <characteristic name="Skill" typeId="533fbbe5-c7a7-4fc0-87cb-dee784341215">4+</characteristic>
+            <characteristic name="S" typeId="b41a74d4-b711-4597-8321-b4598492122c">4</characteristic>
+            <characteristic name="AP" typeId="364c7262-ad89-4636-8fc6-6795931c1c85">0</characteristic>
+            <characteristic name="D" typeId="0a89b98c-f9db-4f13-84e8-1e718bde0391">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="9ef30c4a-c18d-46bd-8951-4b9fcc09b10a" name="Копьё и щит" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">2</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">4</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">0</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="12"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da3f31c6-34ca-4806-8902-3e6defdb41d2" name="Эмиссар" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="cabd66ba-b3c1-4f59-89d3-eec4647d6cf2" name="Эмиссар" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">6&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">4</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">3+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">3</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">8+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">2</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="0cd56985-621b-4d53-81d7-3bac71575bbf" name="Метательный дротик" typeId="93726c05-ab82-4a52-8393-8c175e2bda48" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="484e1a4b-24ee-4c76-8031-36444380bc5c">12&quot;</characteristic>
+            <characteristic name="A" typeId="9d919dca-041d-4558-8999-2ec7a93a3051">1</characteristic>
+            <characteristic name="Skill" typeId="533fbbe5-c7a7-4fc0-87cb-dee784341215">4+</characteristic>
+            <characteristic name="S" typeId="b41a74d4-b711-4597-8321-b4598492122c">4</characteristic>
+            <characteristic name="AP" typeId="364c7262-ad89-4636-8fc6-6795931c1c85">0</characteristic>
+            <characteristic name="D" typeId="0a89b98c-f9db-4f13-84e8-1e718bde0391">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="756a66a1-83f3-4d24-870d-522263cd2743" name="Клинок эмиссара" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">3</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">4</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">-1</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4cfb6004-3c6f-47e2-8d19-ec650a8facb5" name="Рыцарь Сола" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="777148ed-1d16-4e82-849b-70e73a57be92" name="Рыцарь Сола" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">5&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">5</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">2+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">3</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">8+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="f5507236-04a3-403f-8e3c-0192e5f7ab90" name="Клинок Сола" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">3</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">5</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">-2</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="377a597f-3a36-461e-87c2-85db79102079" name="Верховный рыцарь" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="c8f0f7ab-4064-42bd-8283-81dd6269caf8" name="Верховный рыцарь" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">5&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">5</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">2+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">4+</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">4</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">9+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">2</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="9f295a84-14d9-4556-8b7a-38d50253b7df" name="Фаербол" typeId="93726c05-ab82-4a52-8393-8c175e2bda48" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="484e1a4b-24ee-4c76-8031-36444380bc5c">18&quot;</characteristic>
+            <characteristic name="A" typeId="9d919dca-041d-4558-8999-2ec7a93a3051">3</characteristic>
+            <characteristic name="Skill" typeId="533fbbe5-c7a7-4fc0-87cb-dee784341215">3+</characteristic>
+            <characteristic name="S" typeId="b41a74d4-b711-4597-8321-b4598492122c">6</characteristic>
+            <characteristic name="AP" typeId="364c7262-ad89-4636-8fc6-6795931c1c85">-2</characteristic>
+            <characteristic name="D" typeId="0a89b98c-f9db-4f13-84e8-1e718bde0391">2</characteristic>
+            <characteristic name="Special" typeId="717281af-e661-40be-8680-8e19e9db4486">Магия. Каждая 6 на кубе попадания поджигает цель.</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="1b2fde53-8757-494c-884d-a2b095100e89" name="Клинок Сола" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">4</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">5</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">-2</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="45"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry id="0a5bae46-1c94-429b-8261-e358ff2cb058" name="Отряд арбалетчиков" type="unit" hidden="false"
+                    collective="false" import="true">
+      <categoryLinks>
+      <categoryLink id="e1e70a97-65c1-4b30-8a49-cc3dca081425" targetId="37c4e4d8-eb1b-4523-85d2-35db13b06bc0" hidden="false" primary="true"/>
+      <categoryLink id="51a98577-706d-4a48-8f57-cbeb6b6f5b2c" targetId="ceca7fb2-b4e7-430d-896e-25bf8a6e01fe" hidden="false" primary="false"/>
+      <categoryLink id="0dbfd138-285c-453f-8d77-3f3b5bc8c993" targetId="61cbe4ac-c7af-4ae3-83c1-2450bfb0fadc" hidden="false" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+      <infoLink id="f1e2b6da-a717-46f7-8388-7f4362b8262f" targetId="e3f1459d-2f31-4aa2-895f-3c37ce26bbdc" type="rule" hidden="false"/>
+      <infoLink id="9ae10b0c-328a-4d6f-8bc7-0501c4f5a7d8" targetId="7f8c33bd-b87f-46ee-8a6a-a0cd491c2dba" type="rule" hidden="false"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fbb7cd52-52fa-4a10-84e9-9bf76e87a090" name="Модели" hidden="false"
+                             collective="false" import="true">
+          <entryLinks>
+          <entryLink id="3e97e1a3-ba71-4347-8077-1b151fdd9e56" targetId="5965257f-8646-4d33-80da-3fa68bad4534" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="4"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="b08680b8-0f70-424b-801c-ad814d7f66fa" type="min"/>
+              <constraint field="selections" scope="parent" value="9"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="e35145a2-7752-4040-8e12-202e9e354939" type="max"/>
+            </constraints>
+          </entryLink>
+          <entryLink id="076fb0b6-b90e-422b-869e-bcaf0798a8c9" targetId="fceacfb8-53e5-478c-8ceb-a25e0426b729" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="36c49f06-abfd-4210-8555-1bd89a50e8c7" type="min"/>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="066c76b0-fd3e-4e07-87d1-8cef860fdb11" type="max"/>
+            </constraints>
+          </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="e1f745b1-59fe-4154-8160-d6f5d09aee1e" name="Отряд привратников-легионеров" type="unit" hidden="false"
+                    collective="false" import="true">
+      <categoryLinks>
+      <categoryLink id="7bf7a4ad-78a8-4197-871e-dba2de929e3d" targetId="37c4e4d8-eb1b-4523-85d2-35db13b06bc0" hidden="false" primary="true"/>
+      <categoryLink id="b5a38f31-2e82-49e4-85d1-3334ded4f52e" targetId="61cbe4ac-c7af-4ae3-83c1-2450bfb0fadc" hidden="false" primary="false"/>
+      <categoryLink id="2fbdc864-262f-4577-891c-6871a0b965b2" targetId="be3d80d2-cda5-45fd-8da0-7f735c9b3259" hidden="false" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+      <infoLink id="01d2d64a-1174-4739-8b60-c0bbcd767f8b" targetId="973eb3ea-8bfc-4cf8-8bf0-178cef69f5a3" type="rule" hidden="false"/>
+      <infoLink id="1da8d093-92bc-4439-8afc-8b26d08bb58c" targetId="7c7f07c5-7506-488c-8689-047e9fa3efd1" type="rule" hidden="false"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="93b77cde-dba2-4ab3-8ca6-4d74c631db5a" name="Модели" hidden="false"
+                             collective="false" import="true">
+          <entryLinks>
+          <entryLink id="1229e6e1-8cce-4d8c-8769-06044bd9c09a" targetId="5a07066d-6a4d-45ea-841a-5cc8c9700b22" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="4"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="b610871f-a2a0-4142-8368-27bc7bced621" type="min"/>
+              <constraint field="selections" scope="parent" value="9"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="414d975b-c51f-4464-88ae-d61e1f07dd90" type="max"/>
+            </constraints>
+          </entryLink>
+          <entryLink id="f17cc546-12f1-40f4-8ece-85f70d89b88f" targetId="da3f31c6-34ca-4806-8902-3e6defdb41d2" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="36dd5728-c3d1-43d4-824e-761888812b96" type="min"/>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="a36607e0-e629-453e-8fe5-5916c827b45a" type="max"/>
+            </constraints>
+          </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="46a05fd1-25da-4f65-8677-3383ffd33c64" name="Отряд рыцарей" type="unit" hidden="false"
+                    collective="false" import="true">
+      <categoryLinks>
+      <categoryLink id="7f7cca8c-62d4-4d01-8e64-5242e02d3ce7" targetId="37c4e4d8-eb1b-4523-85d2-35db13b06bc0" hidden="false" primary="true"/>
+      <categoryLink id="4e52d9a0-39c4-4e1c-8538-2bf78c3abdde" targetId="12f3421e-3301-42d9-89fb-36cea1dd5d5c" hidden="false" primary="false"/>
+      <categoryLink id="83b3aa7b-cf5a-4e96-800c-e4e477d7c80d" targetId="61cbe4ac-c7af-4ae3-83c1-2450bfb0fadc" hidden="false" primary="false"/>
+      <categoryLink id="b198ed53-fca0-40df-890b-beb8543f4f8f" targetId="ccf27112-0d2b-4db6-86e4-e9a7074a2209" hidden="false" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+      <infoLink id="fe936516-fae0-4b76-829e-663086008830" targetId="71c2dd2d-5fd2-49e4-8c0b-dc28f0cfca6e" type="rule" hidden="false"/>
+      <infoLink id="e19680e6-8241-490a-85cd-0fcefbf37627" targetId="13eda901-380e-414c-8063-da1be7893c55" type="rule" hidden="false"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="aaa8888d-a062-4713-8b9f-77283c5dda3f" name="Модели" hidden="false"
+                             collective="false" import="true">
+          <entryLinks>
+          <entryLink id="91d641a7-5c28-4f47-836a-9ad236e2b595" targetId="4cfb6004-3c6f-47e2-8d19-ec650a8facb5" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="4"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="5914a054-c22e-45d0-8f88-0c54e6e420c1" type="min"/>
+              <constraint field="selections" scope="parent" value="9"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="d29762a2-4b66-48f4-864c-a2433a74b874" type="max"/>
+            </constraints>
+          </entryLink>
+          <entryLink id="38a1a30c-9faa-4074-8f40-4373a3959eff" targetId="377a597f-3a36-461e-87c2-85db79102079" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="3ef4194c-c91d-40bf-8549-1c1931d2bca5" type="min"/>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="246e9a20-43cd-4c63-8687-6266b8f7d5f3" type="max"/>
+            </constraints>
+          </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

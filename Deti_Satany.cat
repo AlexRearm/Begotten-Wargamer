@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema"
+           id="997af124-8a57-4159-84af-a36ea44f9b2b" name="Дети Сатаны" revision="1" battleScribeVersion="2.03"
+           gameSystemId="a1b2c3d4-0000-4000-8000-000000000001" hidden="false" library="false">
+  <rules>
+    <rule id="da7a3413-ef95-4fd4-8dab-9a842b0ab835" name="Освящённые кровью болты" hidden="false">
+      <description>Один раз за игру стрельба отряда наносит смертельные раны вместо обычных.</description>
+    </rule>
+    <rule id="1a25d93c-fcc0-486d-86d6-3033f547db63" name="Стая" hidden="false">
+      <description>Отряд может стрелять после отступления.</description>
+    </rule>
+    <rule id="fc9400a2-a218-45b9-82c4-b7369ec0f647" name="Жатва" hidden="false">
+      <description>За каждую уничтоженную этим отрядом вражескую модель отряд восстанавливает 1 рану.</description>
+    </rule>
+    <rule id="87748ea8-66c0-4d3e-8b36-537fc37f0419" name="Ритуальный азарт" hidden="false">
+      <description>После уничтожения вражеского отряда этот отряд может сразу совершить ещё одно движение.</description>
+    </rule>
+    <rule id="fcd40681-19cb-4984-8069-b9f2aa9aa1d4" name="Приговор" hidden="false">
+      <description>В начале боя выберите вражеский отряд: юстициары наносят ему +1 к урону всю игру.</description>
+    </rule>
+    <rule id="4b6fd660-ac60-484f-8883-c083b016d9a7" name="Плащ палача" hidden="false">
+      <description>Отряд имеет инвуль 5+ и не отступает добровольно.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="524d89a8-04c1-495b-899e-631c531723c1" name="Стрелок дома Вараздат" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="680fc721-f2b0-4466-89c9-e21c4e3159a8" name="Стрелок дома Вараздат" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">6&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">4</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">4+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">1</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">6+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="0d1b3b3f-c481-4712-8397-17465431f311" name="Ритуальный арбалет" typeId="93726c05-ab82-4a52-8393-8c175e2bda48" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="484e1a4b-24ee-4c76-8031-36444380bc5c">20&quot;</characteristic>
+            <characteristic name="A" typeId="9d919dca-041d-4558-8999-2ec7a93a3051">1</characteristic>
+            <characteristic name="Skill" typeId="533fbbe5-c7a7-4fc0-87cb-dee784341215">4+</characteristic>
+            <characteristic name="S" typeId="b41a74d4-b711-4597-8321-b4598492122c">4</characteristic>
+            <characteristic name="AP" typeId="364c7262-ad89-4636-8fc6-6795931c1c85">-1</characteristic>
+            <characteristic name="D" typeId="0a89b98c-f9db-4f13-84e8-1e718bde0391">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="a949707c-1d58-40c1-81af-1f243f730b5d" name="Ритуальный кинжал" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">1</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">4+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">3</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">0</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="baef7842-a651-4079-85b8-a26393bff128" name="Сотник Вараздат" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="bbb27066-b564-4f99-8a90-320c74db22ad" name="Сотник Вараздат" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">6&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">4</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">4+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">2</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">7+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="4518f90e-5739-48e4-893a-cfc734593095" name="Ритуальный арбалет" typeId="93726c05-ab82-4a52-8393-8c175e2bda48" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="484e1a4b-24ee-4c76-8031-36444380bc5c">20&quot;</characteristic>
+            <characteristic name="A" typeId="9d919dca-041d-4558-8999-2ec7a93a3051">1</characteristic>
+            <characteristic name="Skill" typeId="533fbbe5-c7a7-4fc0-87cb-dee784341215">4+</characteristic>
+            <characteristic name="S" typeId="b41a74d4-b711-4597-8321-b4598492122c">4</characteristic>
+            <characteristic name="AP" typeId="364c7262-ad89-4636-8fc6-6795931c1c85">-1</characteristic>
+            <characteristic name="D" typeId="0a89b98c-f9db-4f13-84e8-1e718bde0391">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="0d41414a-8c61-4a91-8003-22f50988d945" name="Кинжал сотника" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">2</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">4</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">-1</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a62b4f8d-14e1-4fc2-8b0f-3cff61a36103" name="Рыцарь дома Филимаксио" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="a1ccb408-928e-45ad-8e84-e01ce09ecc2d" name="Рыцарь дома Филимаксио" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">7&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">4</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">3+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">2</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">7+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">2</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="5ee28a2a-5ad3-41e4-899c-340003207743" name="Клинок Филимаксио" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">2</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">4</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">-1</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="14"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="af6ac044-2113-4b57-8a15-388ed46e49a7" name="Дом-капитан Филимаксио" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="fbcd66c6-fb9d-480e-8009-faebec7b825b" name="Дом-капитан Филимаксио" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">7&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">4</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">3+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">3</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">8+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">2</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="bfd0a8e6-c57a-4374-8180-72765c7421f1" name="Кровавое копьё" typeId="93726c05-ab82-4a52-8393-8c175e2bda48" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Range" typeId="484e1a4b-24ee-4c76-8031-36444380bc5c">15&quot;</characteristic>
+            <characteristic name="A" typeId="9d919dca-041d-4558-8999-2ec7a93a3051">2</characteristic>
+            <characteristic name="Skill" typeId="533fbbe5-c7a7-4fc0-87cb-dee784341215">3+</characteristic>
+            <characteristic name="S" typeId="b41a74d4-b711-4597-8321-b4598492122c">5</characteristic>
+            <characteristic name="AP" typeId="364c7262-ad89-4636-8fc6-6795931c1c85">-2</characteristic>
+            <characteristic name="D" typeId="0a89b98c-f9db-4f13-84e8-1e718bde0391">2</characteristic>
+            <characteristic name="Special" typeId="717281af-e661-40be-8680-8e19e9db4486">Магия. Копьё из свернувшейся крови; игнорирует укрытия.</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="c0e55f33-6ba9-4822-84ca-9dc48aa38cc7" name="Парный клинок" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">3</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">5</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">-1</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47eb7b89-160e-4f96-8f97-30c5e47cd2f0" name="Юстициар дома Филимаксио" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="362759fe-0998-48dc-85c5-5bdb7f28b49a" name="Юстициар дома Филимаксио" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">5&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">5</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">2+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">—</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">3</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">8+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">1</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="95845ce9-451b-4fdd-85f6-b31fbacbe771" name="Меч палача" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">3</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">6</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">-2</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="28"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="660b565d-8f1c-4380-8cb3-52afe6f3a195" name="Верховный юстициар Филимаксио" type="model" hidden="false"
+                    collective="false" import="true">
+      <profiles>
+          <profile id="a14a3873-9524-419e-846b-ec3712a98f21" name="Верховный юстициар Филимаксио" typeId="5e394dae-2d39-4e75-842f-67ab39e37214" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="M" typeId="c84dc8ca-3a32-4867-8f0d-492720092c81">5&quot;</characteristic>
+            <characteristic name="T" typeId="a21cb80a-e1e4-479a-8549-cf45d45b2f1d">5</characteristic>
+            <characteristic name="Sv" typeId="d23daa50-ddfb-48a0-8a65-b6ea1e1fac04">2+</characteristic>
+            <characteristic name="InSv" typeId="78442223-36d8-44d4-8967-8a0c930ab2ca">5+</characteristic>
+            <characteristic name="W" typeId="6ba7776c-9ed0-4148-879c-070517358840">4</characteristic>
+            <characteristic name="LD" typeId="af09b0ef-7c4b-4930-8f11-e7c4bec68087">8+</characteristic>
+            <characteristic name="OC" typeId="c728968e-737b-4761-8d6a-ec1b41f096d1">2</characteristic>
+          </characteristics>
+        </profile>
+          <profile id="fb521dba-aa34-4c42-8c4e-82530997d49b" name="Топор приговора" typeId="2a2a85d4-0058-4e94-805e-c6f3c57aac79" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="A" typeId="179c0188-df38-4fb8-8bda-565c5f27c09c">4</characteristic>
+            <characteristic name="Skill" typeId="a6040ed1-8078-431d-8e64-d8e9dcb9bf48">3+</characteristic>
+            <characteristic name="S" typeId="0cb783ab-aaa8-4ee1-8fc8-c5591407a410">7</characteristic>
+            <characteristic name="AP" typeId="7cd6cf2c-bda7-4bcc-833b-4b96b0c25f70">-3</characteristic>
+            <characteristic name="D" typeId="84a9e346-6b11-44ca-8710-bf27fe104e7a">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="04d69444-c218-4681-8ef1-7902c6cd85ed" value="50"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry id="e7e4f934-57ba-41ba-8deb-bfaee71d12f0" name="Отряд стрелков дома Вараздат" type="unit" hidden="false"
+                    collective="false" import="true">
+      <categoryLinks>
+      <categoryLink id="4646a1b3-71d7-4c6f-83dd-23daec28c11a" targetId="37c4e4d8-eb1b-4523-85d2-35db13b06bc0" hidden="false" primary="true"/>
+      <categoryLink id="4416dfcf-7646-478b-82cb-58f080cb26d1" targetId="ceca7fb2-b4e7-430d-896e-25bf8a6e01fe" hidden="false" primary="false"/>
+      <categoryLink id="ca1d1ec6-7774-46b4-8ed1-16a2673e62e6" targetId="64c46708-c7d1-4579-8a3c-b9fedc7140ec" hidden="false" primary="false"/>
+      <categoryLink id="c3afe60f-f912-45ad-840e-fd0e4707dab6" targetId="93d678a6-05dd-4a22-8734-624e0899a28c" hidden="false" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+      <infoLink id="b149ec7e-a1a8-4eea-87bd-50deb973d67c" targetId="da7a3413-ef95-4fd4-8dab-9a842b0ab835" type="rule" hidden="false"/>
+      <infoLink id="7cff2735-74cc-439c-816c-05b623860a1d" targetId="1a25d93c-fcc0-486d-86d6-3033f547db63" type="rule" hidden="false"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6c0cba2d-280c-4409-8388-736ca0d902ce" name="Модели" hidden="false"
+                             collective="false" import="true">
+          <entryLinks>
+          <entryLink id="2dbb4627-afae-49b5-85df-557032459697" targetId="524d89a8-04c1-495b-899e-631c531723c1" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="4"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="af0cf8a0-e95a-4a8e-8161-557d92db50f0" type="min"/>
+              <constraint field="selections" scope="parent" value="9"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="7c4bb624-a1f4-4507-84fb-6f4bc631ae10" type="max"/>
+            </constraints>
+          </entryLink>
+          <entryLink id="2b6525b2-55fb-47a5-8802-3c50060a0b9b" targetId="baef7842-a651-4079-85b8-a26393bff128" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="15eecbba-9671-4ccb-8713-70afb94a9a89" type="min"/>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="33424a45-5684-4d40-8ba1-899bee33295c" type="max"/>
+            </constraints>
+          </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="f508113a-9167-40c3-82be-acc07ba80b9c" name="Отряд средних рыцарей Филимаксио" type="unit" hidden="false"
+                    collective="false" import="true">
+      <categoryLinks>
+      <categoryLink id="d2701a4d-d91d-4963-8775-b1ffaffbad10" targetId="37c4e4d8-eb1b-4523-85d2-35db13b06bc0" hidden="false" primary="true"/>
+      <categoryLink id="f3af93ee-958c-4c56-8f42-2e4a49edeb27" targetId="ccf27112-0d2b-4db6-86e4-e9a7074a2209" hidden="false" primary="false"/>
+      <categoryLink id="281eca75-0201-43d3-866c-19d9c438cfd0" targetId="64c46708-c7d1-4579-8a3c-b9fedc7140ec" hidden="false" primary="false"/>
+      <categoryLink id="95f1cc6e-9ce6-4168-807a-4c7c2960bdb6" targetId="c55a3372-5c10-49da-8699-79794893a990" hidden="false" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+      <infoLink id="24f0ced2-1786-4887-89b5-b21e6361a0e6" targetId="fc9400a2-a218-45b9-82c4-b7369ec0f647" type="rule" hidden="false"/>
+      <infoLink id="2b07acc3-6ac2-4314-802c-acb3d16d0f0a" targetId="87748ea8-66c0-4d3e-8b36-537fc37f0419" type="rule" hidden="false"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5e6f8445-96f9-477b-8dca-019b4b86560e" name="Модели" hidden="false"
+                             collective="false" import="true">
+          <entryLinks>
+          <entryLink id="0828bb9b-52fc-41db-87b4-839dc5fbd8dc" targetId="a62b4f8d-14e1-4fc2-8b0f-3cff61a36103" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="4"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="1e23a208-543d-4f6c-8f53-72f5a5e33a55" type="min"/>
+              <constraint field="selections" scope="parent" value="9"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="8db66788-cd85-43a1-8488-f56ee40743a2" type="max"/>
+            </constraints>
+          </entryLink>
+          <entryLink id="0580d7a4-c31e-4b37-86a7-8218b648846b" targetId="af6ac044-2113-4b57-8a15-388ed46e49a7" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="28943893-5558-44de-872d-e2574b5896d3" type="min"/>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="af6fc132-1b38-4b3f-8aef-5a8fb5c1ba3b" type="max"/>
+            </constraints>
+          </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="5c2722b0-c297-42e0-8cf3-af65ccd93797" name="Отряд тяжелых юстициаров Филимаксио" type="unit" hidden="false"
+                    collective="false" import="true">
+      <categoryLinks>
+      <categoryLink id="dc4a8229-9e8b-42aa-8a13-079c2510d51c" targetId="37c4e4d8-eb1b-4523-85d2-35db13b06bc0" hidden="false" primary="true"/>
+      <categoryLink id="3552e6ba-dfea-4619-8c27-0e9043855f8f" targetId="12f3421e-3301-42d9-89fb-36cea1dd5d5c" hidden="false" primary="false"/>
+      <categoryLink id="9b1638f8-682d-43be-82dc-20eb86ace3d1" targetId="64c46708-c7d1-4579-8a3c-b9fedc7140ec" hidden="false" primary="false"/>
+      <categoryLink id="55be714a-9598-4427-8596-252d96cfb246" targetId="c55a3372-5c10-49da-8699-79794893a990" hidden="false" primary="false"/>
+      <categoryLink id="abb568f3-b063-40a9-834c-b3ce19164f53" targetId="3c6a15e6-0ed3-4293-8778-6ebbb6a4fe9b" hidden="false" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+      <infoLink id="257a7e10-bff0-41c5-89b1-b822f88a2909" targetId="fcd40681-19cb-4984-8069-b9f2aa9aa1d4" type="rule" hidden="false"/>
+      <infoLink id="84f8ca54-dd18-4175-8c0c-24b138bdbcfe" targetId="4b6fd660-ac60-484f-8883-c083b016d9a7" type="rule" hidden="false"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="302d27f5-92bd-4f7b-899c-f0504494b828" name="Модели" hidden="false"
+                             collective="false" import="true">
+          <entryLinks>
+          <entryLink id="ba2f9569-5de7-4d26-8fe9-d28cf7f9221e" targetId="47eb7b89-160e-4f96-8f97-30c5e47cd2f0" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="4"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="9dfef9c5-6b2e-44e0-8b67-e5a4833794b7" type="min"/>
+              <constraint field="selections" scope="parent" value="9"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="9d58a225-f794-4a36-81aa-d540aee8ef0c" type="max"/>
+            </constraints>
+          </entryLink>
+          <entryLink id="d2db3b3e-1186-4961-8bf8-fd84ef7b22f0" targetId="660b565d-8f1c-4380-8cb3-52afe6f3a195" type="selectionEntry" hidden="false">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="68adcdc2-2755-47fc-8aa4-a9c04abc6784" type="min"/>
+              <constraint field="selections" scope="parent" value="1"
+                          percentValue="false" shared="true"
+                          includeChildSelections="false" includeChildForces="false"
+                          id="d8003e99-04e6-4f22-886b-98261dc22efb" type="max"/>
+            </constraints>
+          </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
