@@ -1,0 +1,16 @@
+{
+ "Legs": "textures/legs.png",
+ "LegsAlpha": "textures/legsalpha.png",
+ "HoodAlpha": "textures/hoodalpha.png",
+ "Hood": "textures/hood.png",
+ "HelmetRope": "textures/helmetrope.png",
+ "Helmet": "textures/helmet.png",
+ "HelmetInside": "textures/helmetinside.png",
+ "Cloak": "textures/cloak.png",
+ "Leather": "textures/leather.png",
+ "Metal": "textures/metal.png",
+ "ClothAlpha": "textures/clothalpha.png",
+ "Gloves": "textures/gloves.png",
+ "Gloves_Metal": "textures/gloves_metal.png",
+ "GlovesAlpha": "textures/glovesalpha.png"
+}

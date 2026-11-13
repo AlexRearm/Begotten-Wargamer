@@ -1,0 +1,12 @@
+{
+ "arms_fabric": "textures/arms_fabric.png",
+ "arms": "textures/arms.png",
+ "belt": "textures/belt.png",
+ "body_fabric": "textures/body_fabric.png",
+ "body": "textures/body.png",
+ "cape": "textures/cape.png",
+ "fabric": "textures/fabric.png",
+ "helmet": "textures/helmet.png",
+ "legs_fabric": "textures/legs_fabric.png",
+ "legs": "textures/legs.png"
+}

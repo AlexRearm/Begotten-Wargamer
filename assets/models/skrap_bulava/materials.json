@@ -1,0 +1,7 @@
+{
+ "handle": "textures/handle.png",
+ "Wrap": "textures/wrap.png",
+ "head": "textures/head.png",
+ "Chains": "textures/chains.png",
+ "Blade": "textures/blade.png"
+}

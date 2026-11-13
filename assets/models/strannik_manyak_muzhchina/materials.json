@@ -1,0 +1,10 @@
+{
+ "gltt_chest_diff": "textures/gltt_chest_diff.png",
+ "gltt_coat_diff": "textures/gltt_coat_diff.png",
+ "glovearm": "textures/glovearm.png",
+ "seekerrobe_d": "textures/seekerrobe_d.png",
+ "seekerbeltm_d": "textures/seekerbeltm_d.png",
+ "seekerarmor_d": "textures/seekerarmor_d.png",
+ "seekerunder_d": "textures/seekerunder_d.png",
+ "seekercloth_d": "textures/seekercloth_d.png"
+}

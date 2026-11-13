@@ -1,0 +1,8 @@
+{
+ "fasterner": "textures/fasterner.png",
+ "blade": "textures/blade.png",
+ "heater": "textures/heater.png",
+ "fire_block": "textures/fire_block.png",
+ "handle1": "textures/handle1.png",
+ "handle2": "textures/handle2.png"
+}

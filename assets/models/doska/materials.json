@@ -1,0 +1,9 @@
+{
+ "board": "textures/board.png",
+ "blood": "textures/blood.png",
+ "nails": "textures/nails.png",
+ "blank": "textures/blank.png",
+ "bat_sawblade": "textures/bat_sawblade.png",
+ "board_spikes": "textures/board_spikes.png",
+ "bat_barbedwire": "textures/bat_barbedwire.png"
+}

@@ -1,0 +1,13 @@
+{
+ "AM_M_1470_Metal": "textures/am_m_1470_metal.png",
+ "AM_M_1470_Leather": "textures/am_m_1470_leather.png",
+ "BD_M_1470_Metal": "textures/bd_m_1470_metal.png",
+ "BD_M_1470_Leather": "textures/bd_m_1470_leather.png",
+ "BD_M_1470_Chain": "textures/bd_m_1470_chain.png",
+ "BD_M_1470_Cloth": "textures/bd_m_1470_cloth.png",
+ "HD_M_1470_Face": "textures/hd_m_1470_face.png",
+ "HD_M_1470_Metal": "textures/hd_m_1470_metal.png",
+ "LG_M_1470_Metal": "textures/lg_m_1470_metal.png",
+ "LG_M_1470_Leather": "textures/lg_m_1470_leather.png",
+ "LG_M_1470_Fabric": "textures/lg_m_1470_fabric.png"
+}

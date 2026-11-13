@@ -1,0 +1,10 @@
+{
+ "gloves": "textures/gloves.png",
+ "chainmailgold": "textures/chainmailgold.png",
+ "legs": "textures/legs.png",
+ "stuff": "textures/stuff.png",
+ "cloak": "textures/cloak.png",
+ "chest": "textures/chest.png",
+ "helmet": "textures/helmet.png",
+ "chainmail": "textures/chainmail.png"
+}

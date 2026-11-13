@@ -1,0 +1,7 @@
+{
+ "eyes_red": "textures/eyes_red.png",
+ "skeleton": "textures/skeleton.png",
+ "armour": "textures/armour.png",
+ "rags": "textures/rags.png",
+ "shields": "textures/shields.png"
+}

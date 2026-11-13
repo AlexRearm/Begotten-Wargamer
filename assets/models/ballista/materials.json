@@ -1,0 +1,9 @@
+{
+ "INST_Ballista": "textures/inst_ballista.png",
+ "BoltMaterial": "textures/boltmaterial.png",
+ "harpoon_sheet": "textures/harpoon_sheet.png",
+ "heide_lance": "textures/heide_lance.png",
+ "heide_lancespec": "textures/heide_lancespec.png",
+ "demonssouls_javelinspec": "textures/demonssouls_javelinspec.png",
+ "demonssouls_javelin": "textures/demonssouls_javelin.png"
+}

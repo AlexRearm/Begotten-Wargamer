@@ -1,0 +1,13 @@
+{
+ "bat_barbedwire": "textures/bat_barbedwire.png",
+ "blood": "textures/blood.png",
+ "bat": "textures/bat.png",
+ "bat_chains": "textures/bat_chains.png",
+ "bat_nails": "textures/bat_nails.png",
+ "bat_grip_leather": "textures/bat_grip_leather.png",
+ "blank": "textures/blank.png",
+ "bat_razor": "textures/bat_razor.png",
+ "bat_sawblade": "textures/bat_sawblade.png",
+ "bat_grip_tape": "textures/bat_grip_tape.png",
+ "bat_grip_wrap": "textures/bat_grip_wrap.png"
+}
