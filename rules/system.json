@@ -1,0 +1,14 @@
+{
+  "id": "begotten-wargame",
+  "name": "Begotten Wargame",
+  "revision": 1,
+  "authorName": "AlexRearm",
+  "statsModel": ["M", "WS", "BS", "T", "W", "Sv", "San"],
+  "statsWeapon": ["S", "AP", "A", "D"],
+  "categories": [
+    {"id": "hq", "name": "Командир"},
+    {"id": "troops", "name": "Основные"},
+    {"id": "elites", "name": "Элита"},
+    {"id": "support", "name": "Поддержка"}
+  ]
+}
