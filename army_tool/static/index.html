@@ -99,9 +99,13 @@ function pick(f,u){ if(dirty&&!confirm("Есть несохранённые пр
 function addUnit(fi){
   const f=DB.factions[fi];
   f.units=f.units||[];
+  const st=()=>Object.fromEntries(DB.system.statsModel.map(s=>[s,"-"]));
   f.units.push({id:slug("unit_"+f.units.length),name:"Новый юнит",category:DB.system.categories[1]?.id||"troops",
-    points:0,keywords:[],lore:"",models:[{name:"Боец",min:1,max:1,pointsPerModel:0,
-    stats:Object.fromEntries(DB.system.statsModel.map(s=>[s,"-"])),weapons:[]}],weapons:[],options:[],abilities:[]});
+    points:0,keywords:[],lore:"",
+    models:[
+      {name:"Сержант",leader:true,min:1,max:1,pointsPerModel:0,stats:st(),weapons:[],options:[],choices:[]},
+      {name:"Боец",leader:false,min:4,max:9,pointsPerModel:0,stats:st(),weapons:[],options:[],choices:[]}
+    ],weapons:[],options:[],abilities:[]});
   saveFaction(f).then(()=>{sel={fac:fi,unit:f.units.length-1};load();});
 }
 
@@ -134,7 +138,7 @@ function renderEditor(){
   </fieldset>
 
   <fieldset><legend>Состав отряда и характеристики</legend>
-    <table id="t_models"><tr><th>Модель</th><th>Мин</th><th>Макс</th><th>Очки/мод</th>${DB.system.statsModel.map(s=>`<th class="stat">${s}</th>`).join("")}<th>Оружие</th><th></th></tr></table>
+    <table id="t_models"><tr><th>Модель</th><th title="Сержант/командир — всегда 1 в отряде">Серж.</th><th>Мин</th><th>Макс</th><th>Очки/мод</th>${DB.system.statsModel.map(s=>`<th class="stat">${s}</th>`).join("")}<th>Оружие</th><th></th></tr></table>
     <button id="addmodel" style="margin-top:8px">＋ строка модели</button>
   </fieldset>
 
@@ -143,8 +147,9 @@ function renderEditor(){
     <button id="addweap" style="margin-top:8px">＋ оружие</button>
   </fieldset>
 
-  <fieldset><legend>Опции снаряжения («1 на каждые N моделей»)</legend>
-    <table id="t_opts"><tr><th>Описание опции</th><th>Взять</th><th>Взамен</th><th class="mini">На каждые N</th><th class="mini">Очки</th><th></th></tr></table>
+  <fieldset><legend>Опции снаряжения</legend>
+    <div class="sub" style="margin:2px 0 6px">«1 на каждые N моделей» — заполни колонку N. «Группа» — строки с одинаковой группой образуют выбор 1 из N (например, оружие сержанта); без группы — просто лимит «Макс».</div>
+    <table id="t_opts"><tr><th>Модель</th><th>Название опции</th><th>Группа</th><th>Оружие</th><th class="mini">1 на N</th><th class="mini">Макс</th><th class="mini">Очки</th><th></th></tr></table>
     <button id="addopt" style="margin-top:8px">＋ опция</button>
   </fieldset>
 
@@ -161,6 +166,7 @@ function renderEditor(){
   U.models.forEach((m,i)=>{
     const tr=document.createElement("tr");
     tr.innerHTML=`<td><input data-m="${i}" data-k="name" value="${esc(m.name)}"></td>
+      <td style="text-align:center"><input type="checkbox" data-m="${i}" data-k="leader" ${m.leader?"checked":""}></td>
       <td><input class="mini" type="number" data-m="${i}" data-k="min" value="${m.min}"></td>
       <td><input class="mini" type="number" data-m="${i}" data-k="max" value="${m.max}"></td>
       <td><input class="mini" type="number" data-m="${i}" data-k="pointsPerModel" value="${m.pointsPerModel}"></td>
@@ -180,15 +186,31 @@ function renderEditor(){
       <td><button class="delrow" data-delweap="${i}">✕</button></td>`;
     tw.appendChild(tr);
   });
-  // опции
+  // опции: плоский список, собранный из моделей (options + choices) + старые unit.options
+  if(!U._flat){
+    U._flat=[];
+    U.models.forEach((m,mi)=>{
+      (m.options||[]).forEach(o=>U._flat.push({mi,group:"",name:o.name||"",weapon:o.takeWeapon||"",perN:o.perModels||0,max:o.max||1,points:o.points||0}));
+      (m.choices||[]).forEach(ch=>(ch.options||[]).forEach(o=>U._flat.push({mi,group:ch.name,name:"",weapon:o.weapon||"",perN:0,max:1,points:o.points||0})));
+    });
+    (U.options||[]).forEach(o=>{ // старый формат — к первой не-сержантской модели
+      let mi=U.models.findIndex(m=>!m.leader); if(mi<0)mi=0;
+      U._flat.push({mi,group:"",name:o.name||"",weapon:o.takeWeapon||"",perN:o.perModels||0,max:o.max||1,points:o.points||0});
+    });
+    U.options=[];
+  }
   const to=$("#t_opts");
-  U.options.forEach((o,i)=>{
+  U._flat.forEach((r,i)=>{
     const tr=document.createElement("tr");
-    tr.innerHTML=`<td><input data-oi="${i}" data-k="name" value="${esc(o.name)}"></td>
-      <td><select data-oi="${i}" data-k="takeWeapon"><option value="">—</option>${U.weapons.map(w=>`<option value="${esc(w.id)}" ${o.takeWeapon===w.id?"selected":""}>${esc(w.name)}</option>`).join("")}</select></td>
-      <td><select data-oi="${i}" data-k="replacesWeapon"><option value="">—</option>${U.weapons.map(w=>`<option value="${esc(w.id)}" ${o.replacesWeapon===w.id?"selected":""}>${esc(w.name)}</option>`).join("")}</select></td>
-      <td><input class="mini" type="number" data-oi="${i}" data-k="perModels" value="${o.perModels||5}"></td>
-      <td><input class="mini" type="number" data-oi="${i}" data-k="points" value="${o.points||0}"></td>
+    const msel=U.models.map((m,j)=>`<option value="${j}" ${r.mi===j?"selected":""}>${esc(m.name)}</option>`).join("");
+    const wsel=U.weapons.map(w=>`<option value="${esc(w.id)}" ${r.weapon===w.id?"selected":""}>${esc(w.name)}</option>`).join("");
+    tr.innerHTML=`<td><select data-oi="${i}" data-k="mi">${msel}</select></td>
+      <td><input data-oi="${i}" data-k="name" value="${esc(r.name)}" ${r.group?"disabled placeholder='(из группы)'":""}></td>
+      <td><input data-oi="${i}" data-k="group" value="${esc(r.group)}" placeholder="—"></td>
+      <td><select data-oi="${i}" data-k="weapon"><option value="">—</option>${wsel}</select></td>
+      <td><input class="mini" type="number" data-oi="${i}" data-k="perN" value="${r.perN||0}"></td>
+      <td><input class="mini" type="number" data-oi="${i}" data-k="max" value="${r.max||1}"></td>
+      <td><input class="mini" type="number" data-oi="${i}" data-k="points" value="${r.points||0}"></td>
       <td><button class="delrow" data-delopt="${i}">✕</button></td>`;
     to.appendChild(tr);
   });
@@ -203,16 +225,33 @@ function renderEditor(){
   });
 
   const rebind=()=>{collect();renderEditor();mark();};
-  $("#addmodel").onclick=()=>{collect();U.models.push({name:"Боец",min:1,max:1,pointsPerModel:0,stats:Object.fromEntries(DB.system.statsModel.map(s=>[s,"-"])),weapons:[]});renderEditor();mark();};
+  $("#addmodel").onclick=()=>{collect();U.models.push({name:"Боец",leader:false,min:1,max:1,pointsPerModel:0,stats:Object.fromEntries(DB.system.statsModel.map(s=>[s,"-"])),weapons:[],options:[],choices:[]});renderEditor();mark();};
   $("#addweap").onclick=()=>{collect();U.weapons.push({id:slug("w"+U.weapons.length),name:"Новое оружие",S:"-",AP:"-",A:"-",D:"-",abilities:""});renderEditor();mark();};
-  $("#addopt").onclick=()=>{collect();U.options.push({name:"Новая опция",takeWeapon:"",replacesWeapon:"",perModels:5,points:0});renderEditor();mark();};
+  $("#addopt").onclick=()=>{collect();U._flat.push({mi:0,group:"",name:"Новая опция",weapon:"",perN:0,max:1,points:0});renderEditor();mark();};
   $("#addab").onclick=()=>{collect();U.abilities.push({name:"Новая способность",text:""});renderEditor();mark();};
-  ed.querySelectorAll("[data-delmodel]").forEach(b=>b.onclick=()=>{collect();U.models.splice(+b.dataset.delmodel,1);renderEditor();mark();});
+  ed.querySelectorAll("[data-delmodel]").forEach(b=>b.onclick=()=>{collect();const di=+b.dataset.delmodel;
+    U.models.splice(di,1);
+    U._flat.forEach(r=>{if(r.mi===di)r.mi=0;else if(r.mi>di)r.mi--;});
+    renderEditor();mark();});
   ed.querySelectorAll("[data-delweap]").forEach(b=>b.onclick=()=>{collect();U.weapons.splice(+b.dataset.delweap,1);renderEditor();mark();});
-  ed.querySelectorAll("[data-delopt]").forEach(b=>b.onclick=()=>{collect();U.options.splice(+b.dataset.delopt,1);renderEditor();mark();});
+  ed.querySelectorAll("[data-delopt]").forEach(b=>b.onclick=()=>{collect();U._flat.splice(+b.dataset.delopt,1);renderEditor();mark();});
   ed.querySelectorAll("[data-delab]").forEach(b=>b.onclick=()=>{collect();U.abilities.splice(+b.dataset.delab,1);renderEditor();mark();});
 
-  $("#save").onclick=async()=>{collect();await saveFaction(F);toast("Сохранено: "+U.name);renderSide();};
+  $("#save").onclick=async()=>{collect();
+    // распределяем плоские опции обратно по моделям
+    U.models.forEach(m=>{m.options=[];m.choices=[];});
+    U._flat.forEach(r=>{
+      const m=U.models[r.mi]||U.models[0];if(!m)return;
+      if(r.group){
+        let ch=m.choices.find(c=>c.name===r.group);
+        if(!ch){ch={name:r.group,options:[]};m.choices.push(ch);}
+        if(r.weapon)ch.options.push({weapon:r.weapon,points:r.points||0});
+      }else if(r.weapon){
+        m.options.push({name:r.name||"Опция",takeWeapon:r.weapon,perModels:r.perN||0,max:r.max||1,points:r.points||0});
+      }
+    });
+    delete U._flat;
+    await saveFaction(F);toast("Сохранено: "+U.name);renderSide();};
   $("#delunit").onclick=async()=>{if(!confirm("Удалить юнит «"+U.name+"»?"))return;
     F.units.splice(sel.unit,1);await saveFaction(F);sel={fac:null,unit:null};await load();toast("Юнит удалён");};
 
@@ -222,12 +261,15 @@ function renderEditor(){
     U.lore=$("#f_lore").value;
     ed.querySelectorAll("[data-m]").forEach(e=>{
       const m=U.models[+e.dataset.m];
-      if(e.dataset.k)m[e.dataset.k]=e.type==="number"?+e.value:e.value;
+      if(e.dataset.k)m[e.dataset.k]=e.type==="number"?+e.value:(e.type==="checkbox"?e.checked:e.value);
       else if(e.dataset.stat)m.stats[e.dataset.stat]=e.value;
       else if(e.dataset.w){const w=e.dataset.w;if(e.checked&&!m.weapons.includes(w))m.weapons.push(w);if(!e.checked)m.weapons=m.weapons.filter(x=>x!==w);}
     });
     ed.querySelectorAll("[data-wi]").forEach(e=>{const w=U.weapons[+e.dataset.wi];w[e.dataset.k]=e.value;});
-    ed.querySelectorAll("[data-oi]").forEach(e=>{const o=U.options[+e.dataset.oi];o[e.dataset.k]=e.type==="number"?+e.value:e.value;});
+    ed.querySelectorAll("[data-oi]").forEach(e=>{
+      const r=U._flat[+e.dataset.oi],k=e.dataset.k;
+      r[k]=["mi","perN","max","points"].includes(k)?(+e.value||0):e.value;
+    });
     ed.querySelectorAll("[data-ai]").forEach(e=>{const a=U.abilities[+e.dataset.ai];a[e.dataset.k]=e.value;});
     if(U.id==="новый_юнит"||!U.id)U.id=slug(U.name);
   }
